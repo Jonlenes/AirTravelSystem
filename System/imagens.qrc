@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Imagens/iconBtn.png</file>
+        <file>Imagens/icon_open.png</file>
+        <file>Imagens/new_viagem.png</file>
+    </qresource>
+</RCC>

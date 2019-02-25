@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayoutPrintGraph"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QTableWidget" name="tableWidgetTimes"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QTableWidget" name="tableWidgetCitys"/>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QPlainTextEdit" name="plainTextEditOutVoos"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>603</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad"/>
+   </widget>
+   <widget class="QMenu" name="menuTrip">
+    <property name="title">
+     <string>Trip</string>
+    </property>
+    <addaction name="actionNew_Trip"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTrip"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionLoad"/>
+   <addaction name="separator"/>
+   <addaction name="actionNew_Trip"/>
+  </widget>
+  <action name="actionLoad">
+   <property name="icon">
+    <iconset resource="imagens.qrc">
+     <normaloff>:/Imagens/icon_open.png</normaloff>:/Imagens/icon_open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Load file paths</string>
+   </property>
+  </action>
+  <action name="actionNew_Trip">
+   <property name="icon">
+    <iconset resource="imagens.qrc">
+     <normaloff>:/Imagens/new_viagem.png</normaloff>:/Imagens/new_viagem.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Trip</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="imagens.qrc"/>
+ </resources>
+ <connections/>
+</ui>
